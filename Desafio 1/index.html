@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans:wght@400;700&family=Readex+Pro:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    <input type="number" value="" class="monto">
+<body style="background: rgb(11, 11, 48); display: flex; align-items: center; flex-direction: column; justify-content: center; color: white; padding-top: 25vh; font-family: 'Roboto', sans-serif;">
+    <span>SOLICITE SU PRESTAMO</span>
+    <input type="number" value="" class="monto" onkeydown="enviar()" style="height: 22px; border-radius: 5px; outline: none; border: none; margin: 30px 0px; width: 250px; text-align: justify;" placeholder="Ingrese un monto superior a 10.000">
     <button type="submit" onclick="enviar()">aceptar</button>
     
-    <span class="cartel" style="min-height: 1oopx; color: black;"></span>
+    <span class="cartel"></span>
     <script src="app.js"></script>
 </body>
 </html>
+
+<style>
+    .rojo
+    {
+        color: red;
+    }
+
+    .verde
+    {
+        color: green;
+    }
+</style>
