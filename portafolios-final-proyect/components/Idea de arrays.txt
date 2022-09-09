@@ -1,0 +1,19 @@
+1 - Rehacer la pagina con mismas caracteristicas pero bien estructurada
+ 
+2 - Crear una variable por cada publicacion que contenga un innerHtml
+
+3 - Crear publicaciones = [publicacionUno, publicacionDos, publicacionTres]
+
+4 - Crear EventListener "load"
+
+5 - Agregar ciclo "for(publicacion of publicaciones)" dentro del Listener
+
+6 - Agregar let seccion = document.createElement("div")
+
+7 - Aplicar addAtributes("class", "seccion")
+
+9 - Crear variable para almacenar la row ( let rowUno = document.querySelector(".row-uno"))
+
+9 - Cada vez que se itere, se activara un evento rowUno.appendChild("seccion")
+
+10 - Asi tambien agregar seccion.appendChild(publicacion)
