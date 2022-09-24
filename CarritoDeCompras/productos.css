@@ -5,6 +5,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.navbar{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    height: 90px;
+}
+
 .container-fluid{
     width: 100vw;
     padding: 0;
@@ -19,8 +25,6 @@
     background-color: rgb(240, 240, 240);
     min-height: 100vh;
     position: relative;
-    align-items: flex-start;
-    justify-items: start;
 }
 
 .flex-center{
@@ -48,6 +52,11 @@
 
 .navbar__carrito{
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .navbar__carrito img{
@@ -71,70 +80,162 @@
     opacity: 1;
 }
 
-.carrito-contenedor{
-    top: 0;
-    width: 100%;
-    min-height: 100vh;
-    height:auto;
+.background-dark{
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    translate: 100%;
-    transition: .4s;
-    pointer-events: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.mostrar-carrito-contenedor{
-    translate: 0%;
-    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    top: 0;
 }
 
 .carrito-compras{
     position: absolute;
-    top: 0;
+    top:0;
     right: 0;
-    min-width: 340px;
-    min-height: 100vh;
-    height: auto;
+    translate: 100%;
+    opacity: 0;
     background-color: white;
-
-    display: flex;
-    flex-direction: column;
-    pointer-events: all;
+    border-left: 1px solid rgb(199, 199, 199);
+    width: 320px;
+    height: auto;
+    min-height: 100vh;
+    transition: .4s;
 }
 
 .carrito-titulo{
-    height: 45px;
-    background-color: rgb(214, 214, 214);
-    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
-    font-size: 16px;
-    position: relative;
-
-}
-
-.carrito-titulo > img:hover{
-    cursor: pointer;
+    padding: 0px 15px;
+    background-color: rgb(37, 37, 37);
+    color: white;
 }
 
 .carrito-productos{
-    width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    padding: 20px 0px;
+    min-height: 50vh;
+    height: auto;
+    overflow-y: scroll;
+    padding-bottom: 110px;
+}
+
+.carrito-total{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    opacity: 1;
+    width: 100%;
 }
 
 .card-carrito{
-    margin: 10px 0px;
-    border-bottom: 1px solid rgb(143, 142, 142);
+    border-bottom: 1px solid rgb(199, 199, 199);
+    top: 20px;
+}
+
+.display-all{
+    opacity: 1;
+}
+
+.mostrar-carrito-compras{
+    translate: 0%;
+    opacity: 1;
+}
+
+#contenedor-inicio-sesion{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 0px 10px 1px grey;
+    border-radius: 5px;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.seccion-productos-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-inicio-sesion{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    color: white;
+    font-size: 26px;
+}
+
+.inputs-inicio-sesion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 60%;
+    position: relative;
+}
+
+.inputs-inicio-sesion input{
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin: 20px 0px;
+    padding: 0px 0px 0px 15px;
+}
+
+.inputs-inicio-sesion input{
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin: 20px 0px;
+    padding: 0px 0px 0px 15px;
+}
+
+.button-inicio-sesion{
+    width: 100%;
+    height: 20%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-inicio-sesion button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.saludo-usuario{
+    color: black;
+    margin: 0px 10px;
+    font-size: 18px;
+}
+
+.opacity-cero-pointer-none{
+    opacity: 0;
+    pointer-events: none;
 }
