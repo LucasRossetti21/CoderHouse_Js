@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: rgb(39, 39, 39);
+}
+
+/*CONTAINER REGISTER*/
+
+.container-register{
+    width: 300px;
+    max-width: 300px;
+    height: 410px;
+    max-height: 410px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: rgb(32, 32, 32);
+}
+
+.register-title{
+    height: 100px;
+    width: 100%;
+    background: rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.register-input{
+    height: 240px;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-input > input{
+    margin: 20px 0px;
+    height: 40px;
+    width: 80%;
+    border: 1px solid rgb(0, 183, 255);
+    outline: none;
+    padding-left: 20px;
+}
+
+.register-send{
+    height: 120px;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.register-send > button{
+    height: 45px;
+    width: auto;
+    padding: 5px;
+    background: rgb(0, 183, 255);
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.register-send > a{
+    text-decoration: underline;
+    margin-top: 15px;
+}
