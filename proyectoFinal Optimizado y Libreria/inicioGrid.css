@@ -9,7 +9,7 @@
 .container-layout{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 100px 400px auto 15%;
+    grid-template-rows: 100px 400px auto auto 15%;
     background: rgb(255, 255, 255);
     height: 100vh;
     width: 100%;
@@ -334,11 +334,45 @@ body::-webkit-scrollbar-thumb {
     color: white;
 } .btn-comprar:hover{ color: rgb(255, 255, 255); }
 
+/*CONTAINER NOTICIAS*/
+
+.container-notice{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-color: white;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.notice{
+    width: 50%;
+    min-width: 300px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.notice-title{
+    height: auto;
+    font-size: 28px;
+    text-align: center;
+}
+
+.notice-description{
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
 /*CONTAINER FOOTER*/
 
 .container-footer{
     grid-column: 1 / 2;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
     background: rgb(32, 32, 32);
     display: flex;
     flex-direction: column;

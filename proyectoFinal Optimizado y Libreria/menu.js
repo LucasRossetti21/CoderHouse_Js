@@ -15,8 +15,7 @@ seccionProductos.addEventListener("click", ()=> {
 
 
 window.addEventListener("load", ()=> {
-    let usuariosGuardados = JSON.parse(localStorage.getItem("ingreso"))
-    let menuPresentacion = `<p class="menu-presentacion-parrafo">Hola ${usuariosGuardados}!</p><img src="./icon/corner-right-down.svg" style="width: 20px"></img>`
+    let menuPresentacion = `<p class="menu-presentacion-parrafo">Bienvenido!</p>`
     menuUser.innerHTML = menuPresentacion;
 })
 

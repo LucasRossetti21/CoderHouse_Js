@@ -31,6 +31,27 @@ function renderizarProductos(){
 }
 renderizarProductos()
 
+let noticeTitle = document.getElementById("notice-title")
+let noticeImage = document.getElementById("notice-image")
+let noticeDescription = document.getElementById("notice-description")
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'fb41ff8395mshf7dbfd376fc84adp1c4c8fjsn63ee0be7587d',
+		'X-RapidAPI-Host': 'extract-news.p.rapidapi.com'
+	}
+};
+
+fetch('https://extract-news.p.rapidapi.com/v0/article?url=https%3A%2F%2Fwww.theverge.com%2F2020%2F4%2F17%2F21224728%2Fbill-gates-coronavirus-lies-5g-covid-19', options)
+	.then(response => response.json())
+	.then(response => {
+        noticeTitle.innerHTML = response.article.title
+        noticeDescription.innerHTML = response.article.meta_description
+    })
+    
+	.catch(err => console.error(err));
+
 
 
 
